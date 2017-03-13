@@ -77,8 +77,8 @@ void COSGObject::InitSceneGraph(std::string str)
 	}
 	if (str == "test")
 	{
-		m_node = testCull();// CreatePageLOD();
-		m_root->addChild(testCull());
+		m_node = testCull();//*/ CreatePageLOD()/*;
+		m_root->addChild(m_node);
 		InitManipulator();
 	}
 }
